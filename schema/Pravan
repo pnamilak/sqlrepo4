@@ -1,0 +1,9 @@
+use TennisApp
+GO
+CREATE TABLE [dbo].[UserFeedback] (
+    FeedbackID INT IDENTITY(1,1) PRIMARY KEY,
+    UserName NVARCHAR(100),
+    FeedbackText NVARCHAR(500),
+    Rating INT CHECK (Rating BETWEEN 1 AND 5),
+    SubmittedAt DATETIME DEFAULT GETDATE()
+);
