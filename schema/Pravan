@@ -1,6 +1,6 @@
 use TennisApp
 GO
-CREATE TABLE [dbo].[UserFeedback] (
+CREATE TABLE [dbo].[Feedback] (
     FeedbackID INT IDENTITY(1,1) PRIMARY KEY,
     UserName NVARCHAR(100),
     FeedbackText NVARCHAR(500),
